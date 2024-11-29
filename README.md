@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, install the dependencies:
 
 ```bash
-npm install
+npm install typescript@4.9.5
 ```
 
 Them, run the development server:
