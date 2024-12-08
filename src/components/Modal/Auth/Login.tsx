@@ -11,24 +11,30 @@ const Login:React.FC<LoginProps> = () => {
         password: "",
     })
 
-    return <form>
+    const onSubmit = () => {}
+
+    const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        // upddate form state
+        setLoginForm(prev => ({
+            ...prev,
+        }))
+    }
+
+    return <form onSubmit={onSubmit}>
             <Input 
                 name='email' 
                 placeholder='email' 
                 type='email' 
                 mb={2}
-                onChange={() => {}}
+                onChange={onChange}
             />
             <Input 
                 name='password' 
                 placeholder='password'
                 type='password'
-                mb={2}
-                onChange={ () => {}}
+                onChange={onChange}
             />
-            <Button type='submit'>
-                Log In
-            </Button>
+            <Button type='submit'>Log In</Button>
         </form>
 }
 export default Login
