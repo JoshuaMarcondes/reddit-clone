@@ -25,8 +25,8 @@ const AuthModal:React.FC = () => {
         setModalState(prev => ({
             ...prev,
             open: false,
-        }))
-    }
+        }));
+    };
     return (
       <>
         <Modal isOpen={modalState.open} onClose={handleClose}>
